@@ -81,39 +81,6 @@ class FashionMNISTModelV2(nn.Module):
 | FashionMnistModelV1 | 75.02%        | 0.6850    | 32.10             |
 | FashionMNISTModelV2 | 88.06%        | 0.3239    | 37.13             |
 
-## Key Functions
-
-### Training Step
-```python
-def train_step(model: torch.nn.Module,
-               data_loader: torch.utils.data.DataLoader,
-               loss_fn: torch.nn.Module,
-               optimizer: torch.optim.Optimizer,
-               accuracy_fn,
-               device: torch.device = device):
-    # ... (implementation details)
-```
-
-### Testing Step
-```python
-def test_step(data_loader: torch.utils.data.DataLoader,
-              model: torch.nn.Module,
-              loss_fn: torch.nn.Module,
-              accuracy_fn,
-              device: torch.device = device):
-    # ... (implementation details)
-```
-
-### Model Evaluation
-```python
-def eval_model(model: torch.nn.Module, 
-               data_loader: torch.utils.data.DataLoader, 
-               loss_fn: torch.nn.Module, 
-               accuracy_fn, 
-               device: torch.device = device):
-    # ... (implementation details)
-```
-
 ## Dependencies
 
 - torch==1.x.x
@@ -130,6 +97,3 @@ def eval_model(model: torch.nn.Module,
 - Implement early stopping to prevent overfitting
 - Explore transfer learning with pre-trained models
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
